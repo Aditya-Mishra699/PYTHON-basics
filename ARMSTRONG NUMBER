@@ -1,0 +1,22 @@
+num = int(input("Enter a number: "))
+2
+3 # Calculate the number of digits in num
+4 num_str = str(num)
+5 num_digits = len(num_str)
+6
+7 # Initialize variables
+8 sum_of_powers = 0
+9 temp_num = num
+10
+11 # Calculate the sum of digits raised to the power of num_digits
+12
+13 while temp_num > 0:
+14 digit = temp_num % 10
+15 sum_of_powers += digit ** num_digits
+16 temp_num //= 10
+17
+18 # Check if it's an Armstrong number
+19 if sum_of_powers == num:
+20 print(f"{num} is an Armstrong number.")
+21 else:
+22 print(f"{num} is not an Armstrong number.")
